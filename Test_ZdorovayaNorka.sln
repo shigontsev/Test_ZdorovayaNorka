@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PL", "PL", "{9EEF126F-811B-4533-A98E-818A34CC938A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZdorovayaNorka.WebApi", "ZdorovayaNorka.WebApi\ZdorovayaNorka.WebApi.csproj", "{288FB1E6-79E6-44FE-A3AE-E1281762C3A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{5C735CF6-F260-4DF3-8250-FD595D234C4C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZdorovayaNorka.DAL", "ZdorovayaNorka.DAL\ZdorovayaNorka.DAL.csproj", "{914C51A1-6126-4AFA-AEF6-E711336A2112}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{618336DC-2093-4BDB-B10A-3185567160AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZdorovayaNorka.Common.Entities", "ZdorovayaNorka.Common.Entities\ZdorovayaNorka.Common.Entities.csproj", "{69929FF3-E121-428F-9A11-395D06C510C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{288FB1E6-79E6-44FE-A3AE-E1281762C3A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288FB1E6-79E6-44FE-A3AE-E1281762C3A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288FB1E6-79E6-44FE-A3AE-E1281762C3A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288FB1E6-79E6-44FE-A3AE-E1281762C3A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{914C51A1-6126-4AFA-AEF6-E711336A2112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914C51A1-6126-4AFA-AEF6-E711336A2112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914C51A1-6126-4AFA-AEF6-E711336A2112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914C51A1-6126-4AFA-AEF6-E711336A2112}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69929FF3-E121-428F-9A11-395D06C510C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69929FF3-E121-428F-9A11-395D06C510C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69929FF3-E121-428F-9A11-395D06C510C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69929FF3-E121-428F-9A11-395D06C510C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{288FB1E6-79E6-44FE-A3AE-E1281762C3A9} = {9EEF126F-811B-4533-A98E-818A34CC938A}
+		{914C51A1-6126-4AFA-AEF6-E711336A2112} = {5C735CF6-F260-4DF3-8250-FD595D234C4C}
+		{69929FF3-E121-428F-9A11-395D06C510C6} = {618336DC-2093-4BDB-B10A-3185567160AD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FC3B620-F877-4782-9C19-E7428E121D5E}
+	EndGlobalSection
+EndGlobal
