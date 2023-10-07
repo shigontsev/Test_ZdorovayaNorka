@@ -78,6 +78,11 @@ namespace ZdorovayaNorka.DAL
                 entity.Property(e => e.EndtShiftDate).HasColumnName("EndtShift_Date");
 
                 entity.Property(e => e.StartShiftDate).HasColumnName("StartShift_Date");
+
+                entity.HasOne(d => d.Employee)
+                    .WithMany(p => p.Shifts)
+                    .HasForeignKey(d => d.EmployeId)
+                    .OnDelete(DeleteBehavior.ClientSetNull);
             });
 
             OnModelCreatingPartial(modelBuilder);

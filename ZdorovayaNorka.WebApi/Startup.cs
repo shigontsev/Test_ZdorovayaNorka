@@ -42,6 +42,9 @@ namespace ZdorovayaNorka.WebApi
 
             services.AddScoped<IEmployeeManagerRepository, EmployeeManagerRepository>();
             services.AddScoped<IEmployeeManagerService, EmployeeManagerService>();
+
+            services.AddScoped<IShiftManagerRepository, ShiftManagerRepository>();
+            services.AddScoped<IShiftManagerService, ShiftManagerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

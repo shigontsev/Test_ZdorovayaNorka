@@ -11,11 +11,11 @@ namespace ZdorovayaNorka.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EmployeeManagerController : ControllerBase
+    public class HRDepartmentController : ControllerBase
     {
         private readonly IEmployeeManagerService _employeeManagerService;
 
-        public EmployeeManagerController(IEmployeeManagerService employeeManagerService)
+        public HRDepartmentController(IEmployeeManagerService employeeManagerService)
         {
             _employeeManagerService = employeeManagerService;
         }

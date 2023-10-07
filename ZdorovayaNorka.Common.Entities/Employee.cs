@@ -9,6 +9,11 @@ namespace ZdorovayaNorka.Common.Entities
 {
     public partial class Employee
     {
+        public Employee()
+        {
+            Shifts = new HashSet<Shift>();
+        }
+
         public int Id { get; set; }
         public string LastName { get; set; }
         public string FirstName { get; set; }
@@ -20,5 +25,8 @@ namespace ZdorovayaNorka.Common.Entities
 
         ////[JsonIgnore]
         //public Position? Position { get; set; }
+
+        public virtual ICollection<Shift> Shifts { get; set; }
+
     }
 }
