@@ -17,9 +17,11 @@ namespace ZdorovayaNorka.Service.Interfaces
 
         Employee Get(int id);
 
-        IEnumerable<Employee> GetAll();
+        IEnumerable<Employee> GetAllEmployees();
 
-        IEnumerable<Employee> GetAll(int position_id);
+        IEnumerable<Employee> GetAllEmployees(int position_id);
+
+        IEnumerable<Position> GetAllPositions();
 
     }
 }

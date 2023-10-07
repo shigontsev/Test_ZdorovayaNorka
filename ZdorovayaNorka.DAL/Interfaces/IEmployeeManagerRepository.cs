@@ -19,9 +19,11 @@ namespace ZdorovayaNorka.DAL.Interfaces
 
         //Employee Get(string name);
 
-        IEnumerable<Employee> GetAll();
+        IEnumerable<Employee> GetAllEmployees();
 
-        IEnumerable<Employee> GetAll(int position_id);
+        IEnumerable<Employee> GetAllEmployees(int position_id);
+
+        IEnumerable<Position> GetAllPositions();
 
     }
 }

@@ -83,18 +83,25 @@ namespace ZdorovayaNorka.WebApi.Controllers
             return BadRequest(400);
         }
 
-        [HttpGet("GetAll")]
-        public IActionResult GetAll(int? position_id)
+        [HttpGet("GetAllEmployees")]
+        public IActionResult GetAllEmployees(int? position_id)
         {
             string result = "";
             if (position_id is null)
             {
-                result = JsonHelper.Serialize(_employeeManagerService.GetAll());
+                result = JsonHelper.Serialize(_employeeManagerService.GetAllEmployees());
             }
             else
             {
-                result = JsonHelper.Serialize(_employeeManagerService.GetAll(position_id.Value));
+                result = JsonHelper.Serialize(_employeeManagerService.GetAllEmployees(position_id.Value));
             }
+            return Ok(result);
+        }
+
+        [HttpGet("GetAllPositions")]
+        public IActionResult GetAllPositions()
+        {
+            string result = result = JsonHelper.Serialize(_employeeManagerService.GetAllPositions());
             return Ok(result);
         }
 

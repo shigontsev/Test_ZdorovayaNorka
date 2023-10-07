@@ -33,14 +33,19 @@ namespace ZdorovayaNorka.Service.Implementaitons
             return _employeeManagerRepository.Get(id);
         }
 
-        public IEnumerable<Employee> GetAll()
+        public IEnumerable<Employee> GetAllEmployees()
         {
-            return _employeeManagerRepository.GetAll();
+            return _employeeManagerRepository.GetAllEmployees();
         }
 
-        public IEnumerable<Employee> GetAll(int position_id)
+        public IEnumerable<Employee> GetAllEmployees(int position_id)
         {
-            return _employeeManagerRepository.GetAll(position_id);
+            return _employeeManagerRepository.GetAllEmployees(position_id);
+        }
+
+        public IEnumerable<Position> GetAllPositions()
+        {
+            return _employeeManagerRepository.GetAllPositions();
         }
 
         public Employee Update(Employee employee)

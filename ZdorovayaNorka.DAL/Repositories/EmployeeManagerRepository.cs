@@ -73,7 +73,7 @@ namespace ZdorovayaNorka.DAL.Repositories
             }
         }
 
-        public IEnumerable<Employee> GetAll()
+        public IEnumerable<Employee> GetAllEmployees()
         {
             using (_db = new ApplicationDBContext())
             {
@@ -81,11 +81,19 @@ namespace ZdorovayaNorka.DAL.Repositories
             }
         }
 
-        public IEnumerable<Employee> GetAll(int position_id)
+        public IEnumerable<Employee> GetAllEmployees(int position_id)
         {
             using (_db = new ApplicationDBContext())
             {
                 return _db.Employees.Where(x=>x.PositionId == position_id).Include(x => x.Position).ToArray();
+            }
+        }
+
+        public IEnumerable<Position> GetAllPositions()
+        {
+            using (_db = new ApplicationDBContext())
+            {
+                return _db.Positions.Include(x => x.Employees).ToList();
             }
         }
 
