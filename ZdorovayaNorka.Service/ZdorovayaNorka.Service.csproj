@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZdorovayaNorka.Common.Entities\ZdorovayaNorka.Common.Entities.csproj" />
+    <ProjectReference Include="..\ZdorovayaNorka.DAL\ZdorovayaNorka.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

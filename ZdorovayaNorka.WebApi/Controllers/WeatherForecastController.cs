@@ -1,9 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Xml;
+using ZdorovayaNorka.Common.Helpers;
 using ZdorovayaNorka.DAL;
 
 namespace ZdorovayaNorka.WebApi.Controllers
@@ -39,7 +43,7 @@ namespace ZdorovayaNorka.WebApi.Controllers
 
         private ApplicationDBContext _db;
 
-        [HttpGet]
+        [HttpGet("Get/{id}")]
         public string Get(int id)
         {
             string name = "";
@@ -50,6 +54,30 @@ namespace ZdorovayaNorka.WebApi.Controllers
                 var a = _db.Shifts;
             }
             return name;
+        }
+
+        [HttpGet("GetAllPosition")]
+        public IActionResult GetAllPosition()
+        {
+
+            using (_db = new ApplicationDBContext())
+            {
+                //return Ok(_db.Positions.Include(u=>u.Employees).ToList());
+                var a = JsonHelper.Serialize(_db.Positions.Include(u => u.Employees).ToList());
+                return Ok(a);
+            }
+        }
+
+        [HttpGet("GetAllUser")]
+        public IActionResult GetAllUser()
+        {
+
+            using (_db = new ApplicationDBContext())
+            {
+                //var a = _db.Employees.Include(u => u.Position).ToList();
+                var a = JsonHelper.Serialize(_db.Employees.Include(u => u.Position).ToList());
+                return Ok(a);
+            }
         }
     }
 }

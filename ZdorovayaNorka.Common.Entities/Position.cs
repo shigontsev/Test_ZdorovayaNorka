@@ -12,9 +12,11 @@ namespace ZdorovayaNorka.Common.Entities
             Employees = new HashSet<Employee>();
         }
 
-        public long Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
 
         public virtual ICollection<Employee> Employees { get; set; }
+
+        //public ICollection<Employee> Employees { get; set; }
     }
 }

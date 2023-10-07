@@ -11,6 +11,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ZdorovayaNorka.DAL.Interfaces;
+using ZdorovayaNorka.DAL.Repositories;
+using ZdorovayaNorka.Service.Implementaitons;
+using ZdorovayaNorka.Service.Interfaces;
 
 namespace ZdorovayaNorka.WebApi
 {
@@ -32,6 +36,12 @@ namespace ZdorovayaNorka.WebApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ZdorovayaNorka.WebApi", Version = "v1" });
             });
+
+
+
+
+            services.AddScoped<IEmployeeManagerRepository, EmployeeManagerRepository>();
+            services.AddScoped<IEmployeeManagerService, EmployeeManagerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

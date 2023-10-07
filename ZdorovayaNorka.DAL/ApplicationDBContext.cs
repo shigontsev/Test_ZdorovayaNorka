@@ -45,7 +45,7 @@ namespace ZdorovayaNorka.DAL
 
                 entity.Property(e => e.LastName).IsRequired();
 
-                entity.Property(e => e.MiddleName).IsRequired();
+                //entity.Property(e => e.MiddleName).IsRequired();
 
                 entity.Property(e => e.PositionId).HasColumnName("Position_Id");
 
