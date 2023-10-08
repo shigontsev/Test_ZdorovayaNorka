@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-//#nullable disable
+﻿using System.Collections.Generic;
 
 namespace ZdorovayaNorka.Common.Entities
 {
@@ -16,7 +13,5 @@ namespace ZdorovayaNorka.Common.Entities
         public string Name { get; set; }
 
         public virtual ICollection<Employee> Employees { get; set; }
-
-        //public ICollection<Employee> Employees { get; set; }
     }
 }

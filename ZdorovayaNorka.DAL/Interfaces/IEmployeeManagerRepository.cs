@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using ZdorovayaNorka.Common.Entities;
 
 namespace ZdorovayaNorka.DAL.Interfaces
@@ -16,8 +12,6 @@ namespace ZdorovayaNorka.DAL.Interfaces
         bool Delete(int id);
 
         Employee Get(int id);
-
-        //Employee Get(string name);
 
         IEnumerable<Employee> GetAllEmployees();
 
