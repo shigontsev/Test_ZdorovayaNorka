@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System;
 
 namespace ZdorovayaNorka.Common.Helpers
 {
@@ -7,7 +6,7 @@ namespace ZdorovayaNorka.Common.Helpers
     {
         public static string Serialize(this object obj) {
             var a = JsonConvert.SerializeObject(obj,
-                    Newtonsoft.Json.Formatting.Indented,
+                    Formatting.Indented,
                             new JsonSerializerSettings()
                             {
                                 ReferenceLoopHandling = ReferenceLoopHandling.Ignore

@@ -2,7 +2,6 @@
 using ZdorovayaNorka.Common.Entities;
 using ZdorovayaNorka.Service.Interfaces;
 using System.Text.Json;
-using System.Collections.Generic;
 using ZdorovayaNorka.Common.Helpers;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -40,7 +39,6 @@ namespace ZdorovayaNorka.WebApi.Controllers
 
             if (result != null)
             {
-                //return Ok(result);
                 return Ok(JsonSerializer.Serialize(result));
             }
 

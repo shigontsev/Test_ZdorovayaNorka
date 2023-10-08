@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using ZdorovayaNorka.Common.Entities;
 using ZdorovayaNorka.DAL.Interfaces;
 using ZdorovayaNorka.Service.Interfaces;

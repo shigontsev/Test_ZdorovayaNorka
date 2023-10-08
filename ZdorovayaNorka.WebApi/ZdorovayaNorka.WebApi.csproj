@@ -16,7 +16,6 @@
   <ItemGroup>
     <ProjectReference Include="..\ZdorovayaNorka.Common.Entities\ZdorovayaNorka.Common.Entities.csproj" />
     <ProjectReference Include="..\ZdorovayaNorka.Common.Helpers\ZdorovayaNorka.Common.Helpers.csproj" />
-    <ProjectReference Include="..\ZdorovayaNorka.DAL\ZdorovayaNorka.DAL.csproj" />
     <ProjectReference Include="..\ZdorovayaNorka.Service\ZdorovayaNorka.Service.csproj" />
   </ItemGroup>
 
