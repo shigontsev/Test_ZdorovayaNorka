@@ -101,40 +101,8 @@ namespace ZdorovayaNorka.WebApi.Controllers
         [HttpGet("GetAllPositions")]
         public IActionResult GetAllPositions()
         {
-            string result = result = JsonHelper.Serialize(_employeeManagerService.GetAllPositions());
+            string result = JsonHelper.Serialize(_employeeManagerService.GetAllPositions());
             return Ok(result);
         }
-
-        //// GET: api/<EmployeeManagerController>
-        //[HttpGet]
-        //public IEnumerable<string> Get()
-        //{
-        //    return new string[] { "value1", "value2" };
-        //}
-
-        //// GET api/<EmployeeManagerController>/5
-        //[HttpGet("{id}")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
-
-        //// POST api/<EmployeeManagerController>
-        //[HttpPost]
-        //public void Post([FromBody] string value)
-        //{
-        //}
-
-        //// PUT api/<EmployeeManagerController>/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody] string value)
-        //{
-        //}
-
-        //// DELETE api/<EmployeeManagerController>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
     }
 }

@@ -99,7 +99,16 @@ namespace ZdorovayaNorka.DAL.Repositories
                 shift_last.NumberOfHours = (int)((TimeSpan)(shift_last.EndtShift_DateTime - shift_last.StartShift_DateTime)).TotalHours;
                 using (_db = new ApplicationDBContext())
                 {
-                    _db.Shifts.Update(shift_last);
+                    var shift_upd = new Shift()
+                    {
+                        Id = shift_last.Id,
+                        StartShiftDate = shift_last.StartShiftDate,
+                        EndtShiftDate = shift_last.EndtShiftDate,
+                        NumberOfHours = shift_last.NumberOfHours,
+                        EmployeId = employee.Id,
+                    };
+                    //_db.Shifts.Update(shift_last);
+                    _db.Shifts.Update(shift_upd);
 
                     _db.SaveChanges();
                 }

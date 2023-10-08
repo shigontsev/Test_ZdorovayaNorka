@@ -77,7 +77,7 @@ namespace ZdorovayaNorka.DAL.Repositories
         {
             using (_db = new ApplicationDBContext())
             {
-                return _db.Employees.Include(x=>x.Position).ToArray();
+                return _db.Employees.Include(x=>x.Position).Include(b => b.Shifts).ToList();
             }
         }
 
@@ -85,7 +85,7 @@ namespace ZdorovayaNorka.DAL.Repositories
         {
             using (_db = new ApplicationDBContext())
             {
-                return _db.Employees.Where(x=>x.PositionId == position_id).Include(x => x.Position).ToArray();
+                return _db.Employees.Where(x=>x.PositionId == position_id).Include(x => x.Position).Include(b=> b.Shifts).ToList();
             }
         }
 
@@ -93,7 +93,7 @@ namespace ZdorovayaNorka.DAL.Repositories
         {
             using (_db = new ApplicationDBContext())
             {
-                return _db.Positions.Include(x => x.Employees).ToList();
+                return _db.Positions.Include(x => x.Employees).ThenInclude(b => b.Shifts).ToList();
             }
         }
 
