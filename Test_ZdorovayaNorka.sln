@@ -13,13 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZdorovayaNorka.DAL", "Zdoro
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{618336DC-2093-4BDB-B10A-3185567160AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZdorovayaNorka.Common.Entities", "ZdorovayaNorka.Common.Entities\ZdorovayaNorka.Common.Entities.csproj", "{69929FF3-E121-428F-9A11-395D06C510C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZdorovayaNorka.Common.Entities", "ZdorovayaNorka.Common.Entities\ZdorovayaNorka.Common.Entities.csproj", "{69929FF3-E121-428F-9A11-395D06C510C6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{0D1586BC-8311-4CC1-A96F-6CD2CFBBA426}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZdorovayaNorka.Service", "ZdorovayaNorka.Service\ZdorovayaNorka.Service.csproj", "{39D3E161-B5F4-4577-9408-7A3569743ACD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZdorovayaNorka.Service", "ZdorovayaNorka.Service\ZdorovayaNorka.Service.csproj", "{39D3E161-B5F4-4577-9408-7A3569743ACD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZdorovayaNorka.Common.Helpers", "ZdorovayaNorka.Common.Helpers\ZdorovayaNorka.Common.Helpers.csproj", "{196D4524-740D-4F48-90BA-929AD38BB079}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZdorovayaNorka.Common.Helpers", "ZdorovayaNorka.Common.Helpers\ZdorovayaNorka.Common.Helpers.csproj", "{196D4524-740D-4F48-90BA-929AD38BB079}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
